@@ -121,13 +121,14 @@ if(!class_exists(fetchTube)) {
                 <img src="/timthumb.php?q=65&w='.$settings['thumbWidth'].'&h='.(($settings['thumbWidth']/16)*9-5).'&src='.urlencode($result->snippet->thumbnails->high->url).'" width="'.$settings['thumbWidth'].'" height="'.(($settings['thumbWidth']/16)*9-5).'" /></a>
             </div>';
         }
-        wp_cache_set('fetchTubeResults', $output, null, 1800);
 
       } else {
         $output.= '<li>'.$settings['errorMsg'].'</div>';
       }
       $output.= '</div>';
-
+      
+      wp_cache_set('fetchTubeResults', $output, null, 1800);
+      
       return $output;
     }
   }
