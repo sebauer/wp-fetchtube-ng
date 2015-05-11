@@ -7,7 +7,7 @@
                 <td><input type="text" name="fetchtube_title" id="title" value="<? echo $settings['title'] ?>"/></td>
             </tr>
             <tr valign="top">
-                <th scope="row">Youtube API Key (see <a href="https://developers.google.com/youtube/android/player/register" target="_blank">Google API Documentation</a>)</th>
+                <th scope="row">Youtube API Key (see <a href="https://developers.google.com/youtube/registering_an_application" target="_blank">Google API Documentation</a>)</th>
                 <td><input type="text" name="fetchtube_apiKey" id="apiKey" value="<? echo $settings['apiKey'] ?>"/></td>
             </tr>
             <tr valign="top">
